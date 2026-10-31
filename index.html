@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI ROS</title>
+    <link rel="icon" type="image/png" href="airos.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+			width: 100%;
+			height: 100%;
+            background: #020e1c;
+            overflow: hidden;
+        }
+
+        video {
+			position: fixed;
+			inset: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: center;
+			opacity: 0.6;
+
+            -webkit-mask-image: radial-gradient(
+                ellipse,
+                #020e1c 30%,
+                transparent 100%
+            );
+
+            mask-image: radial-gradient(
+                ellipse,
+                #020e1c 30%,
+                transparent 100%
+            );
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop playsinline>
+        <source src="bg.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
